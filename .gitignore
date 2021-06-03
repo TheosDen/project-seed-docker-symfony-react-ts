@@ -25,3 +25,9 @@ yarn-error.log
 /.idea/
 /.docker/mysql-data/
 /.docker/logs/
+/bin/
+
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
