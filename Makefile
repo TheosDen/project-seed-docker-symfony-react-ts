@@ -25,6 +25,11 @@ run: ## [r] Run project
 r: run
 up: run
 
+develop-deploy: ## [r] Run project
+	$(CMD_WEB_SERVICE) composer install
+	$(CMD_WEB_SERVICE) yarn && yarn dev
+dd: develop-deploy
+
 down: ## [d] Brings the containers down.
 	@printf "${COLOR_WARNING}Stopping system services...${COLOR_OFF}\n"
 	@docker-compose down
@@ -37,5 +42,7 @@ pc: php-console
 ps: ## shows containers statuses
 	@docker-compose ps
 
-ww: ## encore watch
-	$(CMD_WEB_SERVICE) yarn && yarn encore dev-server
+webpack-watch: ## encore watch
+	$(CMD_WEB_SERVICE) yarn
+	$(CMD_WEB_SERVICE) yarn watch
+ww:webpack-watch
