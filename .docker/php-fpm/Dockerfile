@@ -1,8 +1,9 @@
 FROM php:fpm
 
-RUN apt-get update && apt-get install -y --no-install-recommends git zip
+RUN apt-get update && apt-get install -y --no-install-recommends git libzip-dev zip
 
-RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install pdo_mysql \
+        zip
 
 # Install NodeJS
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash

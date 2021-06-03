@@ -27,7 +27,8 @@ up: run
 
 develop-deploy: ## [r] Run project
 	$(CMD_WEB_SERVICE) composer install
-	$(CMD_WEB_SERVICE) yarn && yarn dev
+	$(CMD_WEB_SERVICE) yarn
+	$(CMD_WEB_SERVICE) yarn dev
 dd: develop-deploy
 
 down: ## [d] Brings the containers down.
