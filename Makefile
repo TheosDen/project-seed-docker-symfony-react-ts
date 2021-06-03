@@ -37,5 +37,5 @@ pc: php-console
 ps: ## shows containers statuses
 	@docker-compose ps
 
-ww: ## shows containers statuses
+ww: ## encore watch
 	$(CMD_WEB_SERVICE) yarn && yarn encore dev-server
