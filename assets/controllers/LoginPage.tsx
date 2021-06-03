@@ -1,8 +1,8 @@
-import React = require("react");
-import {Button, Form} from "react-bootstrap";
+import React = require('react');
+import { Button, Form } from 'react-bootstrap'
 
-export default function LoginPage() {
-    return <Form>
+export default function LoginPage () {
+  return <Form>
         <Form.Group controlId="formBasicEmail">
             <Form.Label>Login</Form.Label>
             <Form.Control type="text" placeholder="Enter login" />
