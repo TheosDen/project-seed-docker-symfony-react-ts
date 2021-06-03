@@ -1,0 +1,24 @@
+2021/05/09 11:04:33 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:22:01 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:27:19 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:29:28 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:31:50 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:33:11 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:34:45 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:38:11 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:38:45 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:47:53 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:48:52 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:49:15 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:49:53 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 11:51:19 [emerg] 1#1: host not found in upstream "php-fpm:9000" in /etc/nginx/conf.d/default.conf:2
+2021/05/09 13:43:49 [error] 31#31: *59 directory index of "/var/www/public/" is forbidden, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2021/05/09 13:43:58 [error] 31#31: *59 directory index of "/var/www/public/" is forbidden, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2021/05/09 13:44:17 [error] 31#31: *59 directory index of "/var/www/public/" is forbidden, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2021/05/09 13:44:23 [error] 31#31: *59 directory index of "/var/www/public/" is forbidden, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2021/05/09 13:44:50 [error] 31#31: *59 directory index of "/var/www/public/" is forbidden, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2021/05/09 13:45:38 [error] 31#31: *61 directory index of "/var/www/public/" is forbidden, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2021/05/09 13:46:01 [error] 31#31: *61 directory index of "/var/www/public/" is forbidden, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2021/05/09 13:47:11 [error] 31#31: *63 directory index of "/var/www/public/" is forbidden, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2021/05/09 13:48:06 [error] 31#31: *65 directory index of "/var/www/public/" is forbidden, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2021/05/09 13:48:57 [error] 31#31: *65 directory index of "/var/www/public/" is forbidden, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
