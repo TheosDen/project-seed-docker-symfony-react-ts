@@ -1,6 +1,6 @@
 FROM php:fpm
 
-RUN apt-get update && apt-get install -y --no-install-recommends git libzip-dev zip
+RUN apt-get update && apt-get install -y --no-install-recommends git libzip-dev zip unzip
 
 RUN docker-php-ext-install pdo_mysql \
         zip

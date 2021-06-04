@@ -40,10 +40,15 @@ php-console: ## [pc] Open php environment console
 	$(CMD_WEB_SERVICE) bash
 pc: php-console
 
-ps: ## shows containers statuses
+ps: ## Shows containers statuses
 	@docker-compose ps
 
-webpack-watch: ## encore watch
+webpack-watch: ## [ww] Encore watch
 	$(CMD_WEB_SERVICE) yarn
 	$(CMD_WEB_SERVICE) yarn watch
 ww:webpack-watch
+
+run-all-tests: ## [t] Run all tests and static analyse
+	$(CMD_WEB_SERVICE) bin/phpcs src
+	$(CMD_WEB_SERVICE) bin/phpstan analyse src tests --level max
+ta: run-all-tests
