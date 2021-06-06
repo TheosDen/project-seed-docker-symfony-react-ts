@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage renders correctly 1`] = `
+<form
+  className=""
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="form-label"
+      htmlFor="formBasicEmail"
+    >
+      Login
+    </label>
+    <input
+      className="form-control"
+      id="formBasicEmail"
+      placeholder="Enter login"
+      type="text"
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      className="form-label"
+      htmlFor="formBasicPassword"
+    >
+      Password
+    </label>
+    <input
+      className="form-control"
+      id="formBasicPassword"
+      placeholder="Password"
+      type="password"
+    />
+  </div>
+  <div
+    className="form-group"
+  >
+    <div
+      className="form-check"
+    >
+      <input
+        className="form-check-input"
+        disabled={false}
+        id="formBasicCheckbox"
+        type="checkbox"
+      />
+      <label
+        className="form-check-label"
+        htmlFor="formBasicCheckbox"
+        title=""
+      >
+        Remember me
+      </label>
+    </div>
+  </div>
+  <button
+    className="btn btn-primary"
+    disabled={false}
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;

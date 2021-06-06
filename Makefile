@@ -49,6 +49,10 @@ webpack-watch: ## [ww] Encore watch
 ww:webpack-watch
 
 run-all-tests: ## [t] Run all tests and static analyse
-	$(CMD_WEB_SERVICE) bin/phpcs src
+	@printf "${COLOR_WARNING}PHP_CS - 'bin/phpcs src'...${COLOR_OFF}\n"
+	$(CMD_WEB_SERVICE) bin/phpcs src -p
+	@printf "${COLOR_WARNING}PHPSTAN - 'bin/phpstan analyse src tests --level max'...${COLOR_OFF}\n"
 	$(CMD_WEB_SERVICE) bin/phpstan analyse src tests --level max
-ta: run-all-tests
+	@printf "${COLOR_WARNING}JEST - 'yarn test'...${COLOR_OFF}\n"
+	$(CMD_WEB_SERVICE) yarn test
+t: run-all-tests
