@@ -52,7 +52,7 @@ run-all-tests: ## [t] Run all tests and static analyse
 	@printf "${COLOR_WARNING}PHP_CS - 'bin/phpcs src'...${COLOR_OFF}\n"
 	$(CMD_WEB_SERVICE) bin/phpcs src -p
 	@printf "${COLOR_WARNING}PHPSTAN - 'bin/phpstan analyse src tests --level max'...${COLOR_OFF}\n"
-	$(CMD_WEB_SERVICE) bin/phpstan analyse src tests --level max
+	$(CMD_WEB_SERVICE) bin/phpstan analyse src tests --level max --memory-limit 1G
 	@printf "${COLOR_WARNING}JEST - 'yarn test'...${COLOR_OFF}\n"
 	$(CMD_WEB_SERVICE) yarn test
 t: run-all-tests

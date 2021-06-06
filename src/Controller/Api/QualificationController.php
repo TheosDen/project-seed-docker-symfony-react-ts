@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller\Api;
 
+use App\Entity\Qualification;
 use FOS\RestBundle\Controller\AbstractFOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,35 +17,11 @@ class QualificationController extends AbstractFOSRestController
      */
     public function getQualificationsAction(): Response
     {
-        $data = [
-            [
-                'id' => 1,
-                'customer_id' => 1,
-                'description' => 'Accuracy',
-            ],
-            [
-                'id' => 2,
-                'customer_id' => 1,
-                'description' => 'Integrity',
-            ],
-            [
-                'id' => 3,
-                'customer_id' => 1,
-                'description' => 'Scientific aptitude',
-            ],
-            [
-                'id' => 4,
-                'customer_id' => 1,
-                'description' => 'Mathematical skills',
-            ],
-            [
-                'id' => 5,
-                'customer_id' => 1,
-                'description' => 'Interpersonal skills',
-            ],
-        ];
+        $list = $this->getDoctrine()
+            ->getRepository(Qualification::class)
+            ->findAll();
 
-        $view = $this->view($data, 200);
+        $view = $this->view($list, 200);
 
         return $this->handleView($view);
     }
